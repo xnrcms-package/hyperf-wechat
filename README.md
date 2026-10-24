@@ -1,11 +1,11 @@
-# hyperf-wechat (php8，easyWechat5.0)
+# hyperf-wechat (PHP 8，EasyWeChat 5.0)
 
-微信 SDK for Hyperf， 基于 naixiaoxin/hyperf-wechat
+微信 SDK for Hyperf，基于 [alex-qiu/hyperf-wechat](https://github.com/alexQi/hyperf-wechat) 改造维护。保留原有 `Naixiaoxin\HyperfWechat` 命名空间。
 
 ## 安装
 
 ~~~shell script
-composer require alex-qiu/hyperf-wechat
+composer require xnrcms-package/hyperf-wechat
 ~~~
 
 ## 配置
@@ -13,7 +13,7 @@ composer require alex-qiu/hyperf-wechat
 1. 发布配置文件
 
 ~~~shell script
-php ./bin/hyperf.php vendor:publish alex-qiu/hyperf-wechat
+php ./bin/hyperf.php vendor:publish xnrcms-package/hyperf-wechat
 ~~~
 
 2. 修改应用根目录下的 `config/autoload/wechat.php` 中对应的参数即可。
