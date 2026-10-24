@@ -19,8 +19,8 @@
     }
   },
   "require": {
-    "php": ">=7.0|>=8.0",
-    "ext-swoole": "^4.4|^5.0",
+    "php": "^7.0 || ^8.0",
+    "ext-swoole": "^4.4 || ^5.0 || ^6.0",
     "hyperf/guzzle": "^2.0.0|^3.0.0",
     "hyperf/super-globals": "^2.0.0|^3.0.0",
     "w7corp/easywechat": "^5.0.0"
@@ -29,7 +29,7 @@
     "friendsofphp/php-cs-fixer": "^2.14",
     "phpstan/phpstan": "1.5.5",
     "hyperf/testing": "~1.1.0|^2.0.0",
-    "swoole/ide-helper": "^4.4"
+    "swoole/ide-helper": "^4.4 || ^5.0 || ^6.0"
   },
   "config": {
     "sort-packages": true,

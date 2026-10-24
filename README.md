@@ -8,6 +8,12 @@
 composer require xnrcms-package/hyperf-wechat
 ~~~
 
+## 运行环境
+
+- PHP：`^7.0 || ^8.0`，包含 PHP 8.3。
+- Swoole：`^4.4 || ^5.0 || ^6.0`。
+- 使用 Swoole 6 时，应用所使用的 Hyperf 版本和 Engine 也需要支持 Swoole 6。
+
 ## 配置
 
 1. 发布配置文件

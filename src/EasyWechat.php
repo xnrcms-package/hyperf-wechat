@@ -12,8 +12,6 @@ declare(strict_types=1);
 
 namespace Naixiaoxin\HyperfWechat;
 
-use Hyperf\Utils\ApplicationContext;
-
 /**
  * Class EasyWechat.
  *
@@ -29,6 +27,12 @@ class EasyWechat
 {
     public static function __callStatic($functionName, $args)
     {
-        return ApplicationContext::getContainer()->get(Factory::class)->{$functionName}(...$args);
+        if (class_exists(\Hyperf\Context\ApplicationContext::class)) {
+            $container = \Hyperf\Context\ApplicationContext::getContainer();
+        } else {
+            $container = \Hyperf\Utils\ApplicationContext::getContainer();
+        }
+
+        return $container->get(Factory::class)->{$functionName}(...$args);
     }
 }
